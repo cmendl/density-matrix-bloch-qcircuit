@@ -120,7 +120,7 @@ function main(H::AbstractMatrix)
     @info "Processing data"
     results_string = "beta"*string(β)*".jld"
     save(results_string, "losses", losses,
-             "trdistrances", trdistances,
+             "trdistances", trdistances,
              "fidelities", fidelities)
 end
 
